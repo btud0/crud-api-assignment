@@ -1,5 +1,4 @@
 package com.example;
-
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -16,7 +15,7 @@ public class CharacterService {
     public Character createCharacter(Character character) {
         return characterRepository.save(character);
     }
-    
+
     public List<Character> getAllCharacters() {
         return characterRepository.findAll();
     }   
