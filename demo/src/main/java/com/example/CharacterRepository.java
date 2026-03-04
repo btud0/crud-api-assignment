@@ -16,5 +16,5 @@ public interface CharacterRepository extends JpaRepository<Character, Long> {
     @Query("SELECT c FROM Character c WHERE c.techniques LIKE %?1%")
     List<Character> findByTechniquesContaining(String technique);
 
-    Character findByEmail(String email);
+
 }

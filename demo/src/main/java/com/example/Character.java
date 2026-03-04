@@ -17,8 +17,7 @@ public class Character {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false, unique = true)
-    private String email;
+
 
     @Column(nullable = false)
     private String description;
@@ -31,18 +30,16 @@ public class Character {
     // Default constructor
 }
 
-public Character(String name, String email, String description, String rank, String techniques) {
+public Character(String name, String description, String rank, String techniques) {
     this.name = name;
-    this.email = email;
     this.description = description;
     this.rank = rank;
     this.techniques = techniques;
 }
 
-public Character(Long characterId, String name, String email, String description, String rank, String techniques) {
+public Character(Long characterId, String name, String description, String rank, String techniques) {
     this.characterId = characterId;
     this.name = name;
-    this.email = email;
     this.description = description;
     this.rank = rank;
     this.techniques = techniques;
@@ -65,13 +62,7 @@ public Long getCharacterId() {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getDescription() {
         return description;
