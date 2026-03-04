@@ -48,12 +48,12 @@ public Character(Long characterId, String name, String email, String description
     this.techniques = techniques;
 }
 
-public long getCharacterID() {
+public Long getCharacterId() {
     return characterId;
     }
 
 
-    public void setCharacterID(long characterId) {
+    public void setCharacterId(Long characterId) {
         this.characterId = characterId;
     }       
 
