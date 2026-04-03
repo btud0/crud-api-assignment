@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-@RequestMapping("/characters")
+@RequestMapping("/api/characters")
 public class CharacterAPIController {
     private final CharacterService characterService;
 
@@ -53,7 +53,7 @@ public class CharacterAPIController {
      */
     @PostMapping("/")
     public ResponseEntity<Character> createCharacter(@RequestBody Character character) {
-        Character createdCharacter = characterService.createCharacter(character);
+        Character createdCharacter = characterService.createCharacter(character, null);
         if(createdCharacter != null) {
             return ResponseEntity.ok(createdCharacter);
         } else {
@@ -107,7 +107,7 @@ public class CharacterAPIController {
      */
     @PutMapping("/{id}")
     public ResponseEntity<Character> updateCharacter(@PathVariable Long id, @RequestBody Character characterDetails) {
-        Character updatedCharacter = characterService.updateCharacter(id, characterDetails);
+        Character updatedCharacter = characterService.updateCharacter(id, characterDetails, null);
         if(updatedCharacter != null) {
             return ResponseEntity.ok(updatedCharacter);
         } else {

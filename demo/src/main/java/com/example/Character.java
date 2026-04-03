@@ -24,25 +24,28 @@ public class Character {
 
     private String rank;
     private String techniques;
+    private String imageUrl;
     
 
     public Character() {
     // Default constructor
 }
 
-public Character(String name, String description, String rank, String techniques) {
+public Character(String name, String description, String rank, String techniques, String imageUrl) {
     this.name = name;
     this.description = description;
     this.rank = rank;
     this.techniques = techniques;
+    this.imageUrl = imageUrl;
 }
 
-public Character(Long characterId, String name, String description, String rank, String techniques) {
+public Character(Long characterId, String name, String description, String rank, String techniques, String imageUrl) {
     this.characterId = characterId;
     this.name = name;
     this.description = description;
     this.rank = rank;
     this.techniques = techniques;
+    this.imageUrl = imageUrl;
 }
 
 public Long getCharacterId() {
@@ -85,6 +88,14 @@ public Long getCharacterId() {
     }
     public String getTechniques() {
         return techniques;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }   
 
 }//end of class

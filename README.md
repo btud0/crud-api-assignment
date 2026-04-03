@@ -352,3 +352,10 @@ curl -X DELETE http://localhost:8080/characters/2
 Link to demo video showing api endpoints: 
 ```markdown
 https://uncg-my.sharepoint.com/:v:/g/personal/bjhansen_uncg_edu/IQAk6-OQjzkXQIG3j8hRWnYJAdElnLeCtDhROvnk_m7zAC8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0pxh5r
+```
+
+## MVC Demo Video
+
+Link to demo video showing mvc:
+```markdown
+https://uncg-my.sharepoint.com/:v:/g/personal/bjhansen_uncg_edu/IQB45bapFHhgS7-Wezch6HEMAZYbwrN-4sdzs0s8Ctt3yF0?e=ptnmk8
